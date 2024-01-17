@@ -7,12 +7,19 @@
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!--  Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="ccm_container">
+    <div class="ccm_container container">
       <div class="ccm_header_dv">
         <div class="left">
           <a href="index.html"
@@ -28,38 +35,75 @@
           <span class="date">Thursday, 21 September 2023</span>
         </div>
       </div>
-
-      <div class="ccm_main_menu_dv">
-        <ul>
-          <li>
-            <a href="category.html"><span>News</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>Reports</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>Features</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>Editorial Campaigns</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>Interviews</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>People</span></a>
-          </li>
-          <li>
-            <a href="events.html"><span>Events</span></a>
-          </li>
-          <li>
-            <a href="#"><img src="assets/images/search_icon.png" alt="" /></a>
-          </li>
-        </ul>
+      <div class="header">
+        <nav class="navbar navbar-expand-md m-auto">
+          <div class="ccm_main_menu_dv">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"><span>News</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>Reports</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>Features</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>Editorial Campaigns</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>Interviews</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>People</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html"><span>Events</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="search-buttons">
+          <button class="search-icon" id="search_icon">
+            <img src="assets/images/search_icon.png" alt="" />
+          </button>
+          <button class="search-icon" id="search_close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        
+      </div>
+      <div class="header__search">
+        <form action="">
+          <input type="text" name="s" id="s" placeholder="Search.." />
+        </form>
       </div>
     </div>
 
-    <div class="ccm_container">
+    <div class="ccm_container container">
       <div class="ccm_home_banner_01_dv">
         <a target="_blank" href="https://dhubs.io/">
           <img src="assets/images/home_banner_1.jpg" alt="" />
@@ -68,207 +112,213 @@
 
       <div class="ccm_home_sect_01_dv">
         <div class="inner">
-          <div class="left">
-            <div id="section_01_slider" class="owl-carousel owl-theme">
-              <div class="item">
-                <a href="post-detail.html"
-                  ><img src="assets/images/slide_01.jpg" alt=""
-                /></a>
-              </div>
-              <div class="item">
-                <a href="post-detail.html"
-                  ><img src="assets/images/slide_02.jpg" alt=""
-                /></a>
-              </div>
-              <div class="item">
-                <a href="post-detail.html"
-                  ><img src="assets/images/slide_03.jpg" alt=""
-                /></a>
-              </div>
-              <div class="item">
-                <a href="post-detail.html"
-                  ><img src="assets/images/slide_04.jpg" alt=""
-                /></a>
+          <div class="row">
+            <div class="left col-md-8">
+              <div id="section_01_slider" class="owl-carousel owl-theme">
+                <div class="item">
+                  <a href="post-detail.html"
+                    ><img src="assets/images/slide_01.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item">
+                  <a href="post-detail.html"
+                    ><img src="assets/images/slide_02.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item">
+                  <a href="post-detail.html"
+                    ><img src="assets/images/slide_03.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item">
+                  <a href="post-detail.html"
+                    ><img src="assets/images/slide_04.jpg" alt=""
+                  /></a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="right">
-            <div class="ccm_home_banner_02_dv">
-              <a href="#"
-                ><img src="assets/images/home_banner_2.jpg" alt=""
-              /></a>
-            </div>
-            <div class="ccm_home_banner_03_dv">
-              <a href="#"
-                ><img src="assets/images/home_banner_3.jpg" alt=""
-              /></a>
+            <div class="right col-md-4">
+              <div class="ccm_home_banner_02_dv">
+                <a href="#"
+                  ><img src="assets/images/home_banner_2.jpg" alt=""
+                /></a>
+              </div>
+              <div class="ccm_home_banner_03_dv">
+                <a href="#"
+                  ><img src="assets/images/home_banner_3.jpg" alt=""
+                /></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="ccm_home_sect_02_dv">
-        <div class="left">
-          <h3>Regional News</h3>
-          <div class="ccm_thumnail_style_1_dv">
-            <ul>
-              <li>
-                <a href="post-detail.html">
-                  <div class="img">
-                    <img src="assets/images/thumnail_01.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="post-detail.html">
-                  <div class="img">
-                    <img src="assets/images/thumnail_02.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="post-detail.html">
-                  <div class="img">
-                    <img src="assets/images/thumnail_03.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="post-detail.html">
-                  <div class="img">
-                    <img src="assets/images/thumnail_04.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="post-detail.html">
-                  <div class="img">
-                    <img src="assets/images/thumnail_05.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="post-detail.html">
-                  <div class="img">
-                    <img src="assets/images/thumnail_06.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-            </ul>
+        <div class="row">
+          <div class="left col-lg-7">
+            <h3>Regional News</h3>
+            <div class="ccm_thumnail_style_1_dv">
+              <ul>
+                <li>
+                  <a href="post-detail.html">
+                    <div class="img">
+                      <img src="assets/images/thumnail_01.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="post-detail.html">
+                    <div class="img">
+                      <img src="assets/images/thumnail_02.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="post-detail.html">
+                    <div class="img">
+                      <img src="assets/images/thumnail_03.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="post-detail.html">
+                    <div class="img">
+                      <img src="assets/images/thumnail_04.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="post-detail.html">
+                    <div class="img">
+                      <img src="assets/images/thumnail_05.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="post-detail.html">
+                    <div class="img">
+                      <img src="assets/images/thumnail_06.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="right">
-          <div id="section_02_slider" class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="post-detail.html"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+
+          <div class="right col-lg-5">
+            <div id="section_02_slider" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="post-detail.html"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="post-detail.html"
-                  ><img src="assets/images/section_02_img_2.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="post-detail.html"
+                    ><img src="assets/images/section_02_img_2.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="ccm_home_sect_03_dv">
-        <div class="left">
-          <a href="#"><img src="assets/images/home_banner_4.jpg" alt="" /></a>
-          <a href="#"><img src="assets/images/home_banner_5.jpg" alt="" /></a>
-        </div>
-        <div class="right">
-          <div id="section_03_slider" class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+        <div class="row g-5">
+          <div class="left col-lg-3">
+            <a href="#"><img src="assets/images/home_banner_4.jpg" alt="" /></a>
+            <a href="#"><img src="assets/images/home_banner_5.jpg" alt="" /></a>
+          </div>
+          <div class="right col-lg-9">
+            <div id="section_03_slider" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_2.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_2.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -309,74 +359,76 @@
       </div>
 
       <div class="ccm_home_sect_05_dv">
-        <div class="left">
-          <a href="#"><img src="assets/images/home_banner_6.jpg" alt="" /></a>
-        </div>
-        <div class="right">
-          <h3>International News</h3>
-          <div class="ccm_thumnail_style_1_dv">
-            <ul>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_01.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_02.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_03.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_04.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_05.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_06.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-            </ul>
+        <div class="row g-5">
+          <div class="left col-lg-3">
+            <a href="#"><img src="assets/images/home_banner_6.jpg" alt="" /></a>
+          </div>
+          <div class="right col-lg-9">
+            <h3>International News</h3>
+            <div class="ccm_thumnail_style_1_dv">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_01.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_02.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_03.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_04.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_05.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_06.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -392,31 +444,33 @@
           </p>
         </div>
         <div class="ccm_home_editor_two_column_dv">
-          <div class="left">
-            <div class="ccm_slider_over_txt_dv">
-              <a href="#"
-                ><img src="assets/images/section_02_img_1.jpg" alt=""
-              /></a>
-              <div class="text">
-                <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                <p>
-                  District Cooling provider reports a first quarter EBITDA of
-                  AED 284 million (up by 8.2%)
-                </p>
+          <div class="row g-3">
+            <div class="left col-md-6">
+              <div class="ccm_slider_over_txt_dv">
+                <a href="#"
+                  ><img src="assets/images/section_02_img_1.jpg" alt=""
+                /></a>
+                <div class="text">
+                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                  <p>
+                    District Cooling provider reports a first quarter EBITDA of
+                    AED 284 million (up by 8.2%)
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="right">
-            <div class="ccm_slider_over_txt_dv">
-              <a href="#"
-                ><img src="assets/images/section_02_img_1.jpg" alt=""
-              /></a>
-              <div class="text">
-                <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                <p>
-                  District Cooling provider reports a first quarter EBITDA of
-                  AED 284 million (up by 8.2%)
-                </p>
+            <div class="right col-md-6">
+              <div class="ccm_slider_over_txt_dv">
+                <a href="#"
+                  ><img src="assets/images/section_02_img_1.jpg" alt=""
+                /></a>
+                <div class="text">
+                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                  <p>
+                    District Cooling provider reports a first quarter EBITDA of
+                    AED 284 million (up by 8.2%)
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -424,148 +478,152 @@
       </div>
 
       <div class="ccm_home_sect_07_dv">
-        <div class="left">
-          <h4>
-            Talking <br />
-            HVACR
-          </h4>
-          <p>
-            A Podcast about money, business and power. Hosted by Kate Linebaugh
-            and Ryan Knutson.
-          </p>
-          <a href="">View More Podcast</a>
-        </div>
-        <div class="center">
-          <div class="img">
-            <img src="assets/images/song_img.jpg" alt="" />
-          </div>
-          <div class="text">
-            <h3>Apple Bets Big on 'Nerd Helmets'</h3>
+        <div class="row g-4">
+          <div class="left col-lg-2">
+            <h4>
+              Talking <br />
+              HVACR
+            </h4>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
+              A Podcast about money, business and power. Hosted by Kate
+              Linebaugh and Ryan Knutson.
             </p>
-            <audio controls>
-              <source src="horse.mp3" type="audio/mpeg" />
-            </audio>
+            <a href="">View More Podcast</a>
           </div>
-        </div>
-        <div class="right">
-          <span>Subscribe</span>
-          <a href="#">Apple Podcasts Spotfiy</a>
-          <a href="#" class="btn">More</a>
+          <div class="center col-lg-8">
+            <div class="img">
+              <img src="assets/images/song_img.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h3>Apple Bets Big on 'Nerd Helmets'</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+              </p>
+              <audio controls>
+                <source src="horse.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+          </div>
+          <div class="right col-lg-2">
+            <span>Subscribe</span>
+            <a href="#">Apple Podcasts Spotfiy</a>
+            <a href="#" class="btn">More</a>
+          </div>
         </div>
       </div>
 
       <div class="ccm_home_sect_02_dv">
-        <div class="left">
-          <h3>Features</h3>
-          <div class="ccm_thumnail_style_1_dv">
-            <ul>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_01.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_02.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_03.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_04.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_05.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_06.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-            </ul>
+        <div class="row">
+          <div class="left col-lg-7">
+            <h3>Features</h3>
+            <div class="ccm_thumnail_style_1_dv">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_01.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_02.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_03.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_04.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_05.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_06.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="right">
-          <div id="section_14_slider" class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+          <div class="right col-lg-5">
+            <div id="section_14_slider" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_2.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_2.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -610,114 +668,116 @@
       </div>
 
       <div class="ccm_home_sect_02_dv">
-        <div class="left">
-          <h3>Perspectives</h3>
-          <div class="ccm_thumnail_style_1_dv">
-            <ul>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_01.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_02.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_03.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_04.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_05.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_06.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-            </ul>
+        <div class="row">
+          <div class="left col-lg-7">
+            <h3>Perspectives</h3>
+            <div class="ccm_thumnail_style_1_dv">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_01.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_02.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_03.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_04.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_05.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_06.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="right">
-          <div id="section_15_slider" class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+          <div class="right col-lg-5">
+            <div id="section_15_slider" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_2.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_2.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -727,195 +787,199 @@
 
       <div class="ccm_home_sect_09_dv">
         <h3>Videos</h3>
-        <dlv class="left">
-          <div id="section_9_slider" class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="lg_video_dv">
-                <a href="#">
-                  <img src="assets/images/video_lg.jpg" alt="" />
-                  <div class="play_btn">
-                    <img src="assets/images/play-lg.png" alt="" />
-                  </div>
-                </a>
+        <div class="row g-4">
+          <dlv class="left col-lg-8">
+            <div id="section_9_slider" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="lg_video_dv">
+                  <a href="#">
+                    <img src="assets/images/video_lg.jpg" alt="" />
+                    <div class="play_btn">
+                      <img src="assets/images/play-lg.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="lg_video_dv">
+                  <a href="#">
+                    <img src="assets/images/video_lg.jpg" alt="" />
+                    <div class="play_btn">
+                      <img src="assets/images/play-lg.png" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="lg_video_dv">
+                  <a href="#">
+                    <img src="assets/images/video_lg.jpg" alt="" />
+                    <div class="play_btn">
+                      <img src="assets/images/play-lg.png" alt="" />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="item">
-              <div class="lg_video_dv">
-                <a href="#">
-                  <img src="assets/images/video_lg.jpg" alt="" />
-                  <div class="play_btn">
-                    <img src="assets/images/play-lg.png" alt="" />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="lg_video_dv">
-                <a href="#">
-                  <img src="assets/images/video_lg.jpg" alt="" />
-                  <div class="play_btn">
-                    <img src="assets/images/play-lg.png" alt="" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </dlv>
-        <dlv class="right">
-          <ul>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="assets/images/video_thum_1.jpg" alt="" />
-                </div>
-                <div class="text">
-                  The role of MERV-13 in New York City schools
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="assets/images/video_thum_2.jpg" alt="" />
-                </div>
-                <div class="text">
-                  The role of MERV-13 in New York City schools
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="assets/images/video_thum_3.jpg" alt="" />
-                </div>
-                <div class="text">
-                  The role of MERV-13 in New York City schools
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="img">
-                  <img src="assets/images/video_thum_4.jpg" alt="" />
-                </div>
-                <div class="text">
-                  The role of MERV-13 in New York City schools
-                </div>
-              </a>
-            </li>
-          </ul>
-        </dlv>
-      </div>
-
-      <div class="ccm_home_sect_02_dv">
-        <div class="left">
-          <h3>Interviews</h3>
-          <div class="ccm_thumnail_style_1_dv">
+          </dlv>
+          <dlv class="right col-lg-4">
             <ul>
               <li>
-                <a href="#">
+                <a href="">
                   <div class="img">
-                    <img src="assets/images/thumnail_01.jpg" alt="" />
+                    <img src="assets/images/video_thum_1.jpg" alt="" />
                   </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
+                  <div class="text">
+                    The role of MERV-13 in New York City schools
                   </div>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="">
                   <div class="img">
-                    <img src="assets/images/thumnail_02.jpg" alt="" />
+                    <img src="assets/images/video_thum_2.jpg" alt="" />
                   </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
+                  <div class="text">
+                    The role of MERV-13 in New York City schools
                   </div>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="">
                   <div class="img">
-                    <img src="assets/images/thumnail_03.jpg" alt="" />
+                    <img src="assets/images/video_thum_3.jpg" alt="" />
                   </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
+                  <div class="text">
+                    The role of MERV-13 in New York City schools
                   </div>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="">
                   <div class="img">
-                    <img src="assets/images/thumnail_04.jpg" alt="" />
+                    <img src="assets/images/video_thum_4.jpg" alt="" />
                   </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_05.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="img">
-                    <img src="assets/images/thumnail_06.jpg" alt="" />
-                  </div>
-                  <div class="txt">
-                    Empower reports AED 494 million Q1 2023 revenues
+                  <div class="text">
+                    The role of MERV-13 in New York City schools
                   </div>
                 </a>
               </li>
             </ul>
-          </div>
+          </dlv>
         </div>
-        <div class="right">
-          <div id="section_12_slider" class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+      </div>
+
+      <div class="ccm_home_sect_02_dv">
+        <div class="row">
+          <div class="left col-lg-7">
+            <h3>Interviews</h3>
+            <div class="ccm_thumnail_style_1_dv">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_01.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_02.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_03.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_04.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_05.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="img">
+                      <img src="assets/images/thumnail_06.jpg" alt="" />
+                    </div>
+                    <div class="txt">
+                      Empower reports AED 494 million Q1 2023 revenues
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right col-lg-5">
+            <div id="section_12_slider" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_2.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_2.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="ccm_slider_over_txt_dv">
-                <a href="#"
-                  ><img src="assets/images/section_02_img_1.jpg" alt=""
-                /></a>
-                <div class="text">
-                  <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
-                  <p>
-                    District Cooling provider reports a first quarter EBITDA of
-                    AED 284 million (up by 8.2%)
-                  </p>
+              <div class="item">
+                <div class="ccm_slider_over_txt_dv">
+                  <a href="#"
+                    ><img src="assets/images/section_02_img_1.jpg" alt=""
+                  /></a>
+                  <div class="text">
+                    <h3>Empower reports AED 494 million Q1 2023 revenues</h3>
+                    <p>
+                      District Cooling provider reports a first quarter EBITDA
+                      of AED 284 million (up by 8.2%)
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -924,7 +988,8 @@
       </div>
 
       <div class="ccm_home_sect_02_dv">
-        <div class="left">
+        <div class="row">
+        <div class="left col-lg-7">
           <h3>Reports</h3>
           <div class="ccm_thumnail_style_1_dv">
             <ul>
@@ -991,7 +1056,7 @@
             </ul>
           </div>
         </div>
-        <div class="right">
+        <div class="right col-lg-5">
           <div id="section_13_slider" class="owl-carousel owl-theme">
             <div class="item">
               <div class="ccm_slider_over_txt_dv">
@@ -1038,6 +1103,7 @@
           </div>
         </div>
       </div>
+      </div>
 
       <div class="ccm_home_sect_10_dv">
         <h3>From the Vault</h3>
@@ -1082,7 +1148,7 @@
       </div>
     </div>
 
-    <div class="ccm_container">
+    <div class="ccm_container container">
       <div class="ccm_footer_dv ccm_no_border_top">
         <div class="ccm_subc_dv">
           <h3>Subscribe to our Newsletter: HVACR-360</h3>
@@ -1090,74 +1156,81 @@
           <input type="email" placeholder="Enter Your Email" />
           <button type="button">Subscribe</button>
         </div>
-        <div class="ccm_footer_left_dv">
-          <img src="assets/images/ccme_logo.png" alt="" />
-          <p>
-            Climate Control Middle East, the flagship title of CPI Industry, has
-            been covering the regional and global HVACR industry with an un-
-            wavering commitment to providing in-depth news and analyses on
-            policy, business and technology.
-          </p>
+        
+
+        <div class="footer">
+          <div class="row g-4">
+          <div class="ccm_footer_left_dv col-lg-3">
+            <img src="assets/images/ccme_logo.png" alt="" />
+            <p>
+              Climate Control Middle East, the flagship title of CPI Industry,
+              has been covering the regional and global HVACR industry with an
+              un- wavering commitment to providing in-depth news and analyses on
+              policy, business and technology.
+            </p>
+          </div>
+          <div class="ccm_footer_center_dv col-lg-6">
+            <div class="ccm_footer_columns">
+              <h3>Find on CCME</h3>
+              <ul>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="ccm_footer_columns">
+              <h3>Our Events</h3>
+              <ul>
+                <li><a href="#">World IEQ Forum </a></li>
+                <li><a href="#">DC Dialogue </a></li>
+                <li><a href="#">FoodChain ME </a></li>
+                <li><a href="#">Refrigerants Review </a></li>
+                <li><a href="#">TquadC</a></li>
+                <li><a href="#">Climate Control Awards</a></li>
+              </ul>
+            </div>
+            <div class="ccm_footer_columns">
+              <h3>Connect with us</h3>
+              <ul>
+                <li><a href="#">CPI Industry</a></li>
+                <li><a href="#">SD-02-06, Building 8,</a></li>
+                <li><a href="#">Dubai Media City,</a></li>
+                <li><a href="#">PO. Box 13700,</a></li>
+                <li><a href="#">Dubai, U.A.E.</a></li>
+                <li>
+                  E:<a href="mailto:info@cpi-industry.com"
+                    >info@cpi-industry.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ccm_footer_right_dv col-lg-3">
+            <div class="ccm_footer_socail_dv">
+              <h3>Follow us on</h3>
+              <ul>
+                <li>
+                  <a href="#"><img src="assets/images/fb_icon.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/twitter_icon.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/insta_icon.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/youtube_icon.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="ccm_footer_center_dv">
-          <div class="ccm_footer_columns">
-            <h3>Find on CCME</h3>
-            <ul>
-              <li><a href="#"></a></li>
-            </ul>
-          </div>
-          <div class="ccm_footer_columns">
-            <h3>Our Events</h3>
-            <ul>
-              <li><a href="#">World IEQ Forum </a></li>
-              <li><a href="#">DC Dialogue </a></li>
-              <li><a href="#">FoodChain ME </a></li>
-              <li><a href="#">Refrigerants Review </a></li>
-              <li><a href="#">TquadC</a></li>
-              <li><a href="#">Climate Control Awards</a></li>
-            </ul>
-          </div>
-          <div class="ccm_footer_columns">
-            <h3>Connect with us</h3>
-            <ul>
-              <li>CPI Industry</li>
-              <li>SD-02-06, Building 8,</li>
-              <li>Dubai Media City,</li>
-              <li>PO. Box 13700,</li>
-              <li>Dubai, U.A.E.</li>
-              <li>
-                E:<a href="mailto:info@cpi-industry.com"
-                  >info@cpi-industry.com</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="ccm_footer_right_dv">
-          <div class="ccm_footer_socail_dv">
-            <h3>Follow us on</h3>
-            <ul>
-              <li>
-                <a href="#"><img src="assets/images/fb_icon.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="assets/images/twitter_icon.png" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="assets/images/insta_icon.png" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="assets/images/youtube_icon.png" alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      </div>
+        
       </div>
       <div class="ccm_copyright_dv">
         <p>©Design and Developed by Digi Hubs</p>
@@ -1167,9 +1240,30 @@
     <!-- javascript -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script>
+      // Header Search //
+      let header_search = document.querySelector(".header__search");
+      let search_icon = document.querySelector("#search_icon");
+      let search_close = document.querySelector("#search_close");
+      if (header_search) {
+        search_icon.addEventListener("click", function () {
+          header_search.classList.add("open-search");
+          search_icon.style.display = "none";
+          search_close.style.display = "block";
+        });
+
+        search_close.addEventListener("click", function () {
+          header_search.classList.remove("open-search");
+          search_icon.style.display = "block";
+          search_close.style.display = "none";
+        });
+      }
+
+      // Header Search End //
+
       $(document).ready(function () {
-        var owl = $('#section_01_slider');
+        var owl = $("#section_01_slider");
         owl.owlCarousel({
           margin: 10,
           nav: false,
@@ -1189,7 +1283,7 @@
         });
 
         //Section 2
-        var owl = $('#section_02_slider');
+        var owl = $("#section_02_slider");
         owl.owlCarousel({
           margin: 10,
           nav: false,
@@ -1209,7 +1303,7 @@
         });
 
         //Section 3
-        var owl = $('#section_03_slider');
+        var owl = $("#section_03_slider");
         owl.owlCarousel({
           margin: 10,
           nav: false,
@@ -1229,7 +1323,7 @@
         });
 
         //Section 4
-        var owl = $('#section_04_slider');
+        var owl = $("#section_04_slider");
         owl.owlCarousel({
           margin: 10,
           nav: false,
@@ -1249,7 +1343,7 @@
         });
 
         //Section 9
-        var owl = $('#section_9_slider');
+        var owl = $("#section_9_slider");
         owl.owlCarousel({
           margin: 10,
           nav: false,
@@ -1269,7 +1363,7 @@
         });
 
         //Section 12
-        var owl = $('#section_12_slider');
+        var owl = $("#section_12_slider");
         owl.owlCarousel({
           margin: 10,
           nav: false,
@@ -1289,7 +1383,7 @@
         });
 
         //Section 13
-        var owl = $('#section_13_slider');
+        var owl = $("#section_13_slider");
         owl.owlCarousel({
           margin: 10,
           nav: false,
@@ -1309,7 +1403,7 @@
         });
 
         //Section 14
-        var owl = $('#section_14_slider');
+        var owl = $("#section_14_slider");
         owl.owlCarousel({
           margin: 10,
           nav: false,
@@ -1329,7 +1423,7 @@
         });
 
         //Section 15
-        var owl = $('#section_15_slider');
+        var owl = $("#section_15_slider");
         owl.owlCarousel({
           margin: 10,
           nav: false,
