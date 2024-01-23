@@ -2,72 +2,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>Climate Control - Middle East</title>
     <!-- Favicon -->
-
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!--  Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="ccm_container">
+    <div class="ccm_container container">
       <div class="ccm_header_dv">
         <div class="left">
-          <a href="#"><img src="assets/images/cpi_logo.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="assets/images/cpi_logo.png" alt=""
+          /></a>
         </div>
         <div class="center">
-          <a href="#"><img src="assets/images/ccme_logo.png" alt="" /></a>
+          <a href="index.html"
+            ><img src="assets/images/ccme_logo.png" alt=""
+          /></a>
         </div>
         <div class="right">
           <span class="date">Thursday, 21 September 2023</span>
         </div>
       </div>
-
-      <div class="ccm_main_menu_dv">
-        <ul>
-          <li>
-            <a href="category.html"><span>News</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>Reports</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>Features</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>Editorial Campaigns</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>Interviews</span></a>
-          </li>
-          <li>
-            <a href="category.html"><span>People</span></a>
-          </li>
-          <li>
-            <a href="events.html"><span>Events</span></a>
-          </li>
-          <li>
-            <a href="#"><img src="assets/images/search_icon.png" alt="" /></a>
-          </li>
-        </ul>
+      <div class="header">
+        <nav class="navbar navbar-expand-md m-auto">
+          <div class="ccm_main_menu_dv">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"><span>News</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>Reports</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>Features</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>Editorial Campaigns</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>Interviews</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="category.html"
+                    ><span>People</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html"><span>Events</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="search-buttons">
+          <button class="search-icon" id="search_icon">
+            <img src="assets/images/search_icon.png" alt="" />
+          </button>
+          <button class="search-icon" id="search_close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="header__search">
+        <form action="">
+          <input type="text" name="s" id="s" placeholder="Search.." />
+        </form>
       </div>
     </div>
 
-    <div class="ccm_container">
+    <div class="ccm_container container">
       <div class="ccm_upcoming_event_banner_dv">
         <img src="assets/images/upcoming_event.png" alt="" />
       </div>
 
       <div class="ccm_event_two_column_dv">
-        <div class="left">
+        <div class="row g-3">
+        <div class="left col-lg-6">
           <div class="ccm_heading_dv"><h3>BESPOKE EVENTS</h3></div>
           <a href="#"><img src="assets/images/event_img_01.jpg" alt="" /></a>
         </div>
-        <div class="right">
+        <div class="right col-lg-6">
           <div class="ccm_heading_dv"><h3>Upcoming Events</h3></div>
           <div class="owl-carousel owl-theme">
             <div class="item">
@@ -87,6 +133,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
 
       <div class="ccm_event_breadcrumbs_dv">
@@ -257,82 +304,89 @@
       </div>
     </div>
 
-    <div class="ccm_container">
-      <div class="ccm_footer_dv">
+    <div class="ccm_container container">
+      <div class="ccm_footer_dv ccm_no_border_top">
         <div class="ccm_subc_dv">
           <h3>Subscribe to our Newsletter: HVACR-360</h3>
           <img src="assets/images/sub_email_icon.png" alt="" />
           <input type="email" placeholder="Enter Your Email" />
           <button type="button">Subscribe</button>
         </div>
-        <div class="ccm_footer_left_dv">
-          <img src="assets/images/ccme_logo.png" alt="" />
-          <p>
-            Climate Control Middle East, the flagship title of CPI Industry, has
-            been covering the regional and global HVACR industry with an un-
-            wavering commitment to providing in-depth news and analyses on
-            policy, business and technology.
-          </p>
+        
+
+        <div class="footer">
+          <div class="row g-4">
+          <div class="ccm_footer_left_dv col-lg-3">
+            <img src="assets/images/ccme_logo.png" alt="" />
+            <p>
+              Climate Control Middle East, the flagship title of CPI Industry,
+              has been covering the regional and global HVACR industry with an
+              un- wavering commitment to providing in-depth news and analyses on
+              policy, business and technology.
+            </p>
+          </div>
+          <div class="ccm_footer_center_dv col-lg-6">
+            <div class="ccm_footer_columns">
+              <h3>Find on CCME</h3>
+              <ul>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="ccm_footer_columns">
+              <h3>Our Events</h3>
+              <ul>
+                <li><a href="#">World IEQ Forum </a></li>
+                <li><a href="#">DC Dialogue </a></li>
+                <li><a href="#">FoodChain ME </a></li>
+                <li><a href="#">Refrigerants Review </a></li>
+                <li><a href="#">TquadC</a></li>
+                <li><a href="#">Climate Control Awards</a></li>
+              </ul>
+            </div>
+            <div class="ccm_footer_columns">
+              <h3>Connect with us</h3>
+              <ul>
+                <li><a href="#">CPI Industry</a></li>
+                <li><a href="#">SD-02-06, Building 8,</a></li>
+                <li><a href="#">Dubai Media City,</a></li>
+                <li><a href="#">PO. Box 13700,</a></li>
+                <li><a href="#">Dubai, U.A.E.</a></li>
+                <li>
+                  E:<a href="mailto:info@cpi-industry.com"
+                    >info@cpi-industry.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ccm_footer_right_dv col-lg-3">
+            <div class="ccm_footer_socail_dv">
+              <h3>Follow us on</h3>
+              <ul>
+                <li>
+                  <a href="#"><img src="assets/images/fb_icon.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/twitter_icon.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/insta_icon.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/youtube_icon.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="ccm_footer_center_dv">
-          <div class="ccm_footer_columns">
-            <h3>Find on CCME</h3>
-            <ul>
-              <li><a href="#"></a></li>
-            </ul>
-          </div>
-          <div class="ccm_footer_columns">
-            <h3>Our Events</h3>
-            <ul>
-              <li><a href="#">World IEQ Forum </a></li>
-              <li><a href="#">DC Dialogue </a></li>
-              <li><a href="#">FoodChain ME </a></li>
-              <li><a href="#">Refrigerants Review </a></li>
-              <li><a href="#">TquadC</a></li>
-              <li><a href="#">Climate Control Awards</a></li>
-            </ul>
-          </div>
-          <div class="ccm_footer_columns">
-            <h3>Connect with us</h3>
-            <ul>
-              <li>CPI Industry</li>
-              <li>SD-02-06, Building 8,</li>
-              <li>Dubai Media City,</li>
-              <li>PO. Box 13700,</li>
-              <li>Dubai, U.A.E.</li>
-              <li>
-                E:<a href="mailto:info@cpi-industry.com"
-                  >info@cpi-industry.com</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="ccm_footer_right_dv">
-          <div class="ccm_footer_socail_dv">
-            <h3>Follow us on</h3>
-            <ul>
-              <li>
-                <a href="#"><img src="assets/images/fb_icon.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="assets/images/twitter_icon.png" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="assets/images/insta_icon.png" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="assets/images/youtube_icon.png" alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      </div>
+        
       </div>
       <div class="ccm_copyright_dv">
         <p>©Design and Developed by Digi Hubs</p>
@@ -365,3 +419,29 @@
     </script>
   </body>
 </html>
+
+<!-- javascript -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script>
+  // Header Search //
+  let header_search = document.querySelector(".header__search");
+  let search_icon = document.querySelector("#search_icon");
+  let search_close = document.querySelector("#search_close");
+  if (header_search) {
+    search_icon.addEventListener("click", function () {
+      header_search.classList.add("open-search");
+      search_icon.style.display = "none";
+      search_close.style.display = "block";
+    });
+
+    search_close.addEventListener("click", function () {
+      header_search.classList.remove("open-search");
+      search_icon.style.display = "block";
+      search_close.style.display = "none";
+    });
+  }
+
+  // Header Search End //
+</script>
